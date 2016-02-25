@@ -29,8 +29,7 @@ else
   # the path is different between build and run time (e.g. Heroku).
   ports_libs = File.expand_path("../../ports/#{RbConfig::CONFIG["host"]}/lib/*.so", __FILE__)
   Dir[ports_libs].each do |lib|
-    require "fiddle"
-    Fiddle.dlopen(lib)
+    DL.dlopen(lib)
   end
 
   require 'tiny_tds/tiny_tds'
