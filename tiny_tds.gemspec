@@ -18,7 +18,7 @@ Gem::Specification.new do |s|
   s.rdoc_options  = ['--charset=UTF-8']
   s.extensions    = ['ext/tiny_tds/extconf.rb']
   s.license       = 'MIT'
-  s.add_runtime_dependency     'mini_portile2', '~> 2.0' # Keep this version in sync with the one in extconf.rb !
+  s.add_dependency     'mini_portile2', '~> 2.0' # Keep this version in sync with the one in extconf.rb !
   s.add_development_dependency 'rake', '~> 10.4'
   s.add_development_dependency 'rake-compiler', '0.9.5'
   s.add_development_dependency 'rake-compiler-dock', '~> 0.4.3'
