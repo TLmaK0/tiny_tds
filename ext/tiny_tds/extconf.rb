@@ -8,7 +8,6 @@ require 'fileutils'
 # The gem version constraint in the gemspec is not respected at install time.
 # Keep this version in sync with the one in the gemspec !
 gem 'mini_portile2', '~> 2.0'
-require 'mini_portile2'
 require_relative './extconsts'
 
 # Shamelessly copied from nokogiri
